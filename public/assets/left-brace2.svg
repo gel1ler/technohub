@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 101">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        mask: url(#mask);
+      }
+
+      .cls-3 {
+        fill: #666;
+      }
+    </style>
+    <mask id="mask" x="0" y="0" width="1096" height="101" maskUnits="userSpaceOnUse">
+      <g id="path-1-inside-1_1_118" data-name="path-1-inside-1 1 118">
+        <path class="cls-1" d="M5,50.5C5,22.61,27.61,0,55.5,0h990c27.89,0,50.5,22.61,50.5,50.5h0c0,27.89-22.61,50.5-50.5,50.5H55.5c-27.89,0-50.5-22.61-50.5-50.5h0Z"/>
+      </g>
+    </mask>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <g class="cls-2">
+      <path class="cls-3" d="M50.5,101C22.61,101,0,78.39,0,50.5S22.61,0,50.5,0h5C30.37,0,10,22.61,10,50.5s20.37,50.5,45.5,50.5h-5Z"/>
+    </g>
+  </g>
+</svg>
