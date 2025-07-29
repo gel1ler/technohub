@@ -32,8 +32,8 @@ const Step = ({ num, children }: { num: number, children?: React.ReactNode }) =>
 
 const Steps = () => {
     return (
-        <div className='flex flex-col gap-14 mx-auto mt-40 max-w-[1500px]'>
-            <div className="grid grid-cols-4 gap-6 h-[194px] max-w-[1400px] w-full mx-auto" data-aos="fade-up">
+        <div className='flex flex-col gap-14 mx-auto mt-40 max-w-[1400px]'>
+            <div className="grid grid-cols-4 gap-6 h-[194px] w-full mx-auto" data-aos="fade-up">
                 <Block className='border-[3px] border-thgreen '>
                     <svg width="121" height="48" viewBox="0 0 121 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="path-1-outside-1_1_43" maskUnits="userSpaceOnUse" x="0" y="0" width="121" height="48" fill="black">

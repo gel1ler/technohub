@@ -1,21 +1,21 @@
 import React from 'react'
 
 const Block = ({ src, text, title, children }: { src: string, text: string, title: string, children?: React.ReactNode }) => (
-    <div className="flex flex-col items-center rounded-[30px] border-[5px] border-thgray p-8 relative bg-white">
+    <div className="rounded-[30px] border-[5px] border-thgray px-8 pb-8 relative bg-white">
         <img
             className='absolute top-0 left-1/2 -translate-x-1/2 z-0'
             src='/assets/advantages/small-green-blur.svg'
             alt=''
         />
-        <div className="relative z-10 w-full">
+        <div className="relative z-10 w-full flex flex-col items-center h-full">
             <img
-                className=''
+                className='w-fit h-[225px]'
                 src={`/assets/advantages/${src}.svg`}
                 alt={src}
             />
+            <p className='text-xl z-10 italic flex-grow'>{text}</p>
+            <p className='text-3xl font-bold mt-8'>{title}</p>
         </div>
-        <p className='text-xl z-10 italic flex-grow'>{text}</p>
-        <p className='text-3xl font-bold'>{title}</p>
         {children}
     </div>
 )
@@ -23,7 +23,8 @@ const Block = ({ src, text, title, children }: { src: string, text: string, titl
 const Advantages = () => {
     return (
         <div
-            className='grid grid-rows-2 mx-auto gap-x-[75px] gap-y-[68px] mt-40 w-fit'
+            data-aos='fade-up'
+            className='grid grid-rows-2 mx-auto gap-x-[77px] gap-y-[68px] mt-40 w-fit'
             style={{
                 gridTemplateColumns: '372px 372px 372px'
             }}
@@ -47,14 +48,20 @@ const Advantages = () => {
                 text='Берем на себя риски, гарантируем соответсвие требованиям и законодательству!'
                 title='ДОВЕРИЕ'
             >
-
+                <img
+                    className='absolute top-1/2 right-[6px] translate-x-full -z-10'
+                    src='/assets/advantages/Line2.svg'
+                />
             </Block>
             <Block
                 src='Development Skill'
                 text='Помогаем избежать штрафов и обеспечить безопасность сотрудников!'
                 title='ЭКСПЕРТНОСТЬ'
             >
-
+                <img
+                    className='absolute top-0 translate-y-1/2 right-[6px] translate-x-full -z-10'
+                    src='/assets/advantages/Line3.svg'
+                />
             </Block>
             <Block
                 src='Arrow'

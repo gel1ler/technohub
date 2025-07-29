@@ -6,6 +6,7 @@ import Solutions from './components/Solutions';
 import Start from './components/Start';
 import Steps from './components/Steps';
 import Advantages from './components/Advantages';
+import Request from './components/Request';
 
 function App() {
   useEffect(() => {
@@ -48,6 +49,7 @@ function App() {
           src='/assets/divider.svg'
         />
         <Advantages />
+        <Request />
       </div>
     </div>
   );
