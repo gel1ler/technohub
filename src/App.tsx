@@ -42,12 +42,12 @@ function App() {
         <section id="steps">
           <Steps />
         </section>
-        <Advantages />
         <img
           data-aos="fade-right"
           className='w-screen my-20'
           src='/assets/divider.svg'
         />
+        <Advantages />
       </div>
     </div>
   );
