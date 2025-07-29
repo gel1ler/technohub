@@ -5,6 +5,7 @@ import Header from './components/layout/header';
 import Solutions from './components/Solutions';
 import Start from './components/Start';
 import Steps from './components/Steps';
+import Advantages from './components/Advantages';
 
 function App() {
   useEffect(() => {
@@ -30,7 +31,7 @@ function App() {
       />
 
       {/* Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 overflow-x-hidden w-full">
         <Header />
         <section id="start">
           <Start />
@@ -41,8 +42,9 @@ function App() {
         <section id="steps">
           <Steps />
         </section>
+        <Advantages />
         <img
-          data-aos="fade-up"
+          data-aos="fade-right"
           className='w-screen my-20'
           src='/assets/divider.svg'
         />
