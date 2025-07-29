@@ -30,6 +30,7 @@ const Advantages = () => {
             }}
         >
             <img
+                alt='Workers'
                 className='col-span-2'
                 src='/assets/advantages/workers.png'
             />
@@ -41,6 +42,7 @@ const Advantages = () => {
                 <img
                     className='absolute bottom-[2px] translate-y-full left-1/2 -translate-x-2/3 -z-10'
                     src='/assets/advantages/Line1.svg'
+                    alt=''
                 />
             </Block>
             <Block
@@ -51,6 +53,7 @@ const Advantages = () => {
                 <img
                     className='absolute top-1/2 right-[6px] translate-x-full -z-10'
                     src='/assets/advantages/Line2.svg'
+                    alt=''
                 />
             </Block>
             <Block
@@ -61,6 +64,7 @@ const Advantages = () => {
                 <img
                     className='absolute top-0 translate-y-1/2 right-[6px] translate-x-full -z-10'
                     src='/assets/advantages/Line3.svg'
+                    alt=''
                 />
             </Block>
             <Block

@@ -116,13 +116,39 @@ const Request = () => {
         }
     };
 
+    const [showSuccess, setShowSuccess] = useState(false);
+
+    // Показываем экран успеха с задержкой для анимации
+    React.useEffect(() => {
+        if (isSubmitted) {
+            const timer = setTimeout(() => {
+                setShowSuccess(true);
+            }, 300);
+            return () => clearTimeout(timer);
+        } else {
+            setShowSuccess(false);
+        }
+    }, [isSubmitted]);
+
     if (isSubmitted) {
         return (
-            <div className='my-40 w-[880px] rounded-[30px] flex flex-col items-center gap-4 py-14 mx-auto bg-green-100 border-2 border-green-500'>
+            <div 
+                className={`my-40 w-[880px] rounded-[30px] flex flex-col items-center gap-4 py-14 mx-auto transition-all duration-700 ease-in-out ${
+                    showSuccess 
+                        ? 'bg-green-100 border-2 border-green-500 scale-100 opacity-100' 
+                        : 'bg-gray-100 border-2 border-gray-300 scale-95 opacity-0'
+                }`}
+            >
                 <div className="text-center">
-                    <h2 className='text-4xl font-bold text-green-700 mb-4'>Спасибо!</h2>
-                    <p className='text-xl text-green-600'>Ваша заявка успешно отправлена.</p>
-                    <p className='text-lg text-green-500 mt-2'>Мы свяжемся с вами в ближайшее время.</p>
+                    <div className={`transition-all duration-500 delay-200 ${showSuccess ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
+                        <h2 className='text-4xl font-bold text-green-700 mb-4'>Спасибо!</h2>
+                    </div>
+                    <div className={`transition-all duration-500 delay-400 ${showSuccess ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
+                        <p className='text-xl text-green-600'>Ваша заявка успешно отправлена.</p>
+                    </div>
+                    <div className={`transition-all duration-500 delay-600 ${showSuccess ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
+                        <p className='text-lg text-green-500 mt-2'>Мы свяжемся с вами в ближайшее время.</p>
+                    </div>
                 </div>
             </div>
         );
@@ -130,9 +156,10 @@ const Request = () => {
 
     return (
         <form
-            data-aos='fade-up'
             onSubmit={handleSubmit}
-            className='my-40 w-[880px] rounded-[30px] flex flex-col items-center gap-4 py-14 mx-auto'
+            className={`my-40 w-[880px] rounded-[30px] flex flex-col items-center gap-4 py-14 mx-auto transition-all duration-500 ease-in-out ${
+                isSubmitting ? 'scale-95 opacity-50' : 'scale-100 opacity-100'
+            }`}
             style={{
                 background: 'linear-gradient(180deg, #D9D9D9 0%, #C1C1C1 32.5%, #A4A4A4 70.5%, #868686 88.5%, #737373 100%)',
                 boxShadow: 'inset 4px - 4px 0.4px - 12px #000000',
@@ -161,12 +188,15 @@ const Request = () => {
             <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`text-xl font-semibold rounded-[30px] px-8 py-4 transition-all duration-300 ${isSubmitting
-                    ? 'bg-gray-400 cursor-not-allowed'
-                    : 'bg-thlightgreen hover:bg-thgreen'
-                    }`}
+                className={`text-xl font-semibold rounded-[30px] px-8 py-4 transition-all duration-500 ease-in-out transform ${
+                    isSubmitting
+                        ? 'bg-gray-400'
+                        : 'bg-thlightgreen hover:bg-thgreen '
+                }`}
             >
-                {isSubmitting ? 'ОТПРАВКА...' : 'ОСТАВИТЬ ЗАЯВКУ'}
+                <span className={`transition-all duration-300 ${isSubmitting ? 'opacity-70' : 'opacity-100'}`}>
+                    {isSubmitting ? 'ОТПРАВКА...' : 'ОСТАВИТЬ ЗАЯВКУ'}
+                </span>
             </button>
         </form>
     )

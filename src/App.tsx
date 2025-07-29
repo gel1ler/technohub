@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full min-w-[1400px]">
       {/* Green blur background */}
       <div
         className="absolute inset-0 z-0 h-screen"
@@ -47,9 +47,22 @@ function App() {
           data-aos="fade-right"
           className='w-screen my-20'
           src='/assets/divider.svg'
+          alt=''
         />
         <Advantages />
-        <Request />
+        <div className="w-screen relative">
+          <img
+            alt=''
+            className='absolute top-0 left-40'
+            src='/assets/request/arrows.svg'
+          />
+          <Request />
+          <img
+            alt=''
+            className='absolute top-20 right-0'
+            src='/assets/request/Line3.svg'
+          />
+        </div>
       </div>
     </div>
   );
