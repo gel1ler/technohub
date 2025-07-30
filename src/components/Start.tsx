@@ -18,14 +18,14 @@ const Start = () => {
                     <div className="relative w-[576px] h-[386px] flex items-end justify-center mx-auto -mt-[193px] z-0">
                         {/* Ellipse background */}
                         <img
-                            src="/assets/ellipses.svg"
+                            src="/assets/start/ellipses.svg"
                             alt="Green Ellipse"
                             className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
                             style={{ zIndex: 0 }}
                         />
 
                         <img
-                            src="/assets/lines.svg"
+                            src="/assets/start/lines.svg"
                             alt="Green Ellipse"
                             className="absolute top-8 right-14 translate-y-full translate-x-full pointer-events-none select-none"
                             style={{ zIndex: 0 }}
@@ -50,7 +50,7 @@ const Start = () => {
                 </div>
 
                 <img
-                    src="/assets/head.svg"
+                    src="/assets/start/head.svg"
                     alt="Fingerprint Head"
                     className="object-contain"
                 />
@@ -59,7 +59,7 @@ const Start = () => {
             {/* Motivational quote */}
             <div className="relative w-[1201px] h-[244px] flex items-center justify-center mx-auto mt-10">
                 <img
-                    src="/assets/rect1.svg"
+                    src="/assets/start/rect1.svg"
                     alt="Rect"
                     className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
                     style={{ zIndex: 0 }}

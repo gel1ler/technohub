@@ -20,7 +20,7 @@ const Line = ({
     return (
         <div className={containerClass} data-aos="fade-up">
             <img
-                src="/assets/left-brace2.svg"
+                src="/assets/solutions/left-brace2.svg"
                 alt="brace"
                 className="pointer-events-none select-none h-[101px]"
             />
@@ -36,7 +36,7 @@ const Line = ({
                 </div>
             ))}
             <img
-                src="/assets/left-brace2.svg"
+                src="/assets/solutions/left-brace2.svg"
                 alt="brace"
                 className="pointer-events-none select-none h-[101px] rotate-180 -ml-10"
             />
@@ -53,7 +53,7 @@ const Solutions = () => {
                     <h2 className="text-thgreen">РЕШЕНИЯ</h2>
                 </div>
                 <img
-                    src="/assets/line2.svg"
+                    src="/assets/solutions/Line2.svg"
                     alt="Line"
                     className="pointer-events-none select-none"
                 />
