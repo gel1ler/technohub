@@ -32,18 +32,18 @@ const Start = () => {
                         />
 
                         {/* Statistics grid */}
-                        <div className="z-10 grid grid-cols-2 grid-rows-2 gap-y-8 w-full h-[193px] place-items-center py-10">
+                        <div className="z-10 grid grid-cols-2 grid-rows-2 gap-y-8 w-full h-[193px] place-items-center py-10 font-bold">
                             <div className="flex flex-col items-center">
-                                <span className="text-5xl font-bold">10+</span>
-                                <span className="text-lg font-medium tracking-widest mt-2">РЕШЕНИЙ</span>
+                                <span className="text-5xl">10+</span>
+                                <span className="text-lg mt-2">РЕШЕНИЙ</span>
                             </div>
                             <div className="flex flex-col items-center text-white">
-                                <span className="text-5xl font-bold ">100+</span>
-                                <span className="text-lg font-medium tracking-widest mt-2">КЛИЕНТОВ</span>
+                                <span className="text-5xl">100+</span>
+                                <span className="text-lg mt-2">КЛИЕНТОВ</span>
                             </div>
                             <div className="flex flex-col items-center col-span-2 text-thgreen">
-                                <span className="text-4xl font-bold ">250+</span>
-                                <span className="text font-mediumtracking-widest mt-2">ПРОГРАММ ОБУЧЕНИЯ</span>
+                                <span className="text-4xl ">250+</span>
+                                <span className="mt-2">ПРОГРАММ ОБУЧЕНИЯ</span>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "ТЕХНОХАБ",
+  "name": "ТЕХНОХАБ - Инновационные решения в области безопасности",
+  "description": "Консалтинговая компания в области безопасности труда, электробезопасности, охраны труда, промышленной и пожарной безопасности",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,10 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#4CAF50",
+  "background_color": "#ffffff",
+  "orientation": "landscape",
+  "categories": ["business", "education", "productivity"],
+  "lang": "ru",
+  "dir": "ltr"
 }
