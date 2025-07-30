@@ -25,7 +25,7 @@ function App() {
       <div
         className="absolute inset-0 z-0 h-screen"
         style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL}/assets/green-blur.svg)`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/assets/start/green-blur.svg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -46,25 +46,31 @@ function App() {
         </section>
         <img
           data-aos="fade-right"
-          className='w-screen my-20'
+          className='w-full my-20'
           src='/assets/divider.svg'
           alt=''
         />
         <Advantages />
-        <div className="w-screen relative">
-          <img
-            alt=''
-            className='absolute top-0 left-40'
-            src='/assets/request/arrows.svg'
-          />
-          <Request />
-          <img
-            alt=''
-            className='absolute top-20 right-0'
-            src='/assets/request/Line3.svg'
-          />
-        </div>
-        <Contacts />
+        <section id="request">
+          <div className="w-full relative">
+            <div className="w-fit relative mx-auto">
+              <Request />
+              <img
+                alt=''
+                className='absolute top-0 -left-[200px]'
+                src='/assets/request/arrows.svg'
+              />
+            </div>
+            <img
+              alt=''
+              className='absolute top-20 right-0'
+              src='/assets/request/Line3.svg'
+            />
+          </div>
+        </section>
+        <section id="contacts">
+          <Contacts />
+        </section>
       </div>
     </div>
   );

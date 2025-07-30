@@ -1,18 +1,19 @@
 import React from 'react'
 
 const Block = ({ src, text, title, children }: { src: string, text: string, title: string, children?: React.ReactNode }) => (
-    <div className="rounded-[30px] border-[5px] border-thgray px-8 pb-8 relative bg-white">
+    <div className="rounded-[30px] border-[5px] border-thgray px-6 pb-8 relative bg-white">
         <img
             className='absolute top-0 left-1/2 -translate-x-1/2 z-0'
             src='/assets/advantages/small-green-blur.svg'
             alt=''
         />
         <div className="relative z-10 w-full flex flex-col items-center h-full">
-            <img
-                className='w-fit h-[225px]'
-                src={`/assets/advantages/${src}.svg`}
-                alt={src}
-            />
+            <div className='h-[225px] flex items-center'>
+                <img
+                    src={`/assets/advantages/${src}.svg`}
+                    alt={src}
+                />
+            </div>
             <p className='text-xl z-10 italic flex-grow'>{text}</p>
             <p className='text-3xl font-bold mt-8'>{title}</p>
         </div>
@@ -31,12 +32,12 @@ const Advantages = () => {
         >
             <img
                 alt='Workers'
-                className='col-span-2'
+                className='col-span-2 h-full'
                 src='/assets/advantages/workers.png'
             />
             <Block
                 src='Verified'
-                text='Простые и прозрачные решения для бизнеса люого масштаба!'
+                text='Простые и прозрачные решения для бизнеса любого масштаба!'
                 title='ДОСТУПНОСТЬ'
             >
                 <img

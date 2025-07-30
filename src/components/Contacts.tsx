@@ -14,7 +14,7 @@ const Contacts = () => {
                 <img src="/assets/contacts/heart.svg" alt="" />
                 <img
                     src="/assets/contacts/blur.svg"
-                    className='absolute left-0 -z-10'
+                    className='absolute left-0 -z-10 -top-40'
                     alt=""
                 />
                 <div className="flex flex-col gap-8">

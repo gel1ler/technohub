@@ -46,9 +46,9 @@ const Line = ({
 
 const Solutions = () => {
     return (
-        <div className="">
-            <div className="flex items-center justify-end mt-40 gap-8">
-                <div className="text-[100px] font-bold leading-[102.1%] text-end" data-aos="fade-up">
+        <>
+            <div className="flex items-center justify-end mt-40 gap-8" data-aos="fade-up">
+                <div className="text-[100px] font-bold leading-[102.1%] text-end">
                     <h2 className="text-black">ИННОВАЦИОННЫЕ</h2>
                     <h2 className="text-thgreen">РЕШЕНИЯ</h2>
                 </div>
@@ -67,7 +67,7 @@ const Solutions = () => {
                 <Line arr={['Промышленная безопасность', 'Пожарная безопасность']} num={0} />
                 <Line arr={['Первая ромощь', 'Работы на высоте', 'Вступление в СРО']} align="right" />
             </div>
-        </div>
+        </>
     )
 }
 
