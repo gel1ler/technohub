@@ -14,7 +14,7 @@ const Contacts = () => {
                 <img src="/assets/contacts/heart.svg" alt="" />
                 <img
                     src="/assets/contacts/blur.svg"
-                    className='absolute left-0'
+                    className='absolute left-0 -z-10'
                     alt=""
                 />
                 <div className="flex flex-col gap-8">
@@ -22,7 +22,7 @@ const Contacts = () => {
                     <p className='text-3xl'><b>ЭЛ. ПОЧТА: </b>info@technohub.ru</p>
                     <div className="flex gap-2">
                         <p className='text-3xl'><b>ТЕЛЕФОН: </b></p>
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-2">
                             <p className='text-3xl'>+7 (929) 925 25 24</p>
                             <p className='text-3xl'>+7 (495) 085 55 35</p>
                         </div>

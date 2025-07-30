@@ -2,7 +2,7 @@ import React from 'react'
 
 const Start = () => {
     return (
-        <div className="flex flex-col w-full overflow-x-hidden" data-aos="fade-up">
+        <div className="flex flex-col w-full" data-aos="fade-up">
             <div className="flex justify-around px-8 relative z-10 max-w-[1500px] w-full mx-auto" >
                 <div>
                     {/* Main Heading */}

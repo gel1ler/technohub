@@ -33,7 +33,7 @@ function App() {
       />
 
       {/* Content */}
-      <div className="relative z-10 overflow-x-hidden w-full">
+      <div className="relative z-10 w-full">
         <Header />
         <section id="start">
           <Start />
