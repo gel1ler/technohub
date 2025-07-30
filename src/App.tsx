@@ -7,6 +7,7 @@ import Start from './components/Start';
 import Steps from './components/Steps';
 import Advantages from './components/Advantages';
 import Request from './components/Request';
+import Contacts from './components/Contacts';
 
 function App() {
   useEffect(() => {
@@ -63,6 +64,7 @@ function App() {
             src='/assets/request/Line3.svg'
           />
         </div>
+        <Contacts />
       </div>
     </div>
   );

@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const DotHr = ({ gray }: { gray?: boolean }) => {
     return (
         <div className="flex items-center w-full">
