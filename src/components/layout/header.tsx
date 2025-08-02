@@ -48,9 +48,9 @@ const Header = () => {
                     <Link href="#contacts">
                         Контакты
                     </Link>
-                    <Link href="#">
+                    {/* <Link href="#">
                         Образовательная <br /> платформа
-                    </Link>
+                    </Link> */}
                 </div>
 
                 {/* Search/Menu Icon */}
@@ -58,14 +58,14 @@ const Header = () => {
                     <p className="font-bold text-[20px]">+7 (929) 925 25 24</p>
                     <DotHr />
                     <div className="flex space-x-4 mt-2 mr-2">
-                        <a href="https://t.me/your_telegram_username" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                        <a href="https://t.me/+79299252524" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
                             <svg width="40px" height="40px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z"
                                     fill="#000000" />
                             </svg>
                         </a>
-                        <a href="https://wa.me/your_whatsapp_number" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <a href="https://wa.me/79299252524" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                             <svg fill="#000000" width="40px" height="40px" viewBox="0 0 16 16"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
