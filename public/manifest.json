@@ -21,7 +21,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#4CAF50",
+  "theme_color": "#7B9906",
   "background_color": "#ffffff",
   "orientation": "landscape",
   "categories": ["business", "education", "productivity"],
