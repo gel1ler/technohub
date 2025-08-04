@@ -18,13 +18,31 @@ const Contacts = () => {
                     alt=""
                 />
                 <div className="flex flex-col gap-8">
-                    <p className='text-3xl'><b>АДРЕС: </b> 115230, г. Москва, Нагатинская ул., д.2, помещ. 22/3</p>
-                    <p className='text-3xl'><b>ЭЛ. ПОЧТА: </b>info@technohub-company.ru</p>
+                    <a
+                        href="https://yandex.ru/maps/?text=115230,%20г.%20Москва,%20Нагатинская%20ул.,%20д.2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-3xl"
+                    >
+                        <b>АДРЕС: </b> 115230, г. Москва, Нагатинская ул., д.2, помещ. 22/3
+                    </a>
+
+                    <a
+                        href="mailto:info@technohub-company.ru"
+                        className="text-3xl"
+                    >
+                        <b>ЭЛ. ПОЧТА: </b>info@technohub-company.ru
+                    </a>
+
                     <div className="flex gap-2">
-                        <p className='text-3xl'><b>ТЕЛЕФОН: </b></p>
+                        <p className="text-3xl"><b>ТЕЛЕФОН: </b></p>
                         <div className="flex flex-col gap-2">
-                            <p className='text-3xl'>+7 (495) 085-55-35</p>
-                            <p className='text-3xl'>+7 (929) 925-25-24</p>
+                            <a href="tel:+74950855535" className="text-3xl">
+                                +7 (495) 085-55-35
+                            </a>
+                            <a href="tel:+79299252524" className="text-3xl">
+                                +7 (929) 925-25-24
+                            </a>
                         </div>
                     </div>
                 </div>

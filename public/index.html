@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#7B9906" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <meta name="description" content="ТЕХНОХАБ - консалтинговая компания в области безопасности труда, электробезопасности, охраны труда, промышленной и пожарной безопасности. Более 10 решений, 100+ клиентов, 250+ программ обучения." />
-    <meta name="keywords" content="техноХАБ, безопасность труда, электробезопасность, охрана труда, промышленная безопасность, пожарная безопасность, обучение, консалтинг, лицензирование, СРО" />
-    <meta name="author" content="ТЕХНОХАБ company" />
-    <meta name="robots" content="index, follow" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://technohub.ru/" />
-    <meta property="og:title" content="ТЕХНОХАБ - Инновационные решения в области безопасности" />
-    <meta property="og:description" content="Консалтинговая компания в области безопасности труда, электробезопасности, охраны труда и промышленной безопасности. Более 10 решений для вашего бизнеса." />
-    <meta property="og:image" content="%PUBLIC_URL%/logo/logoX.png" />
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://technohub.ru/" />
-    <meta property="twitter:title" content="ТЕХНОХАБ - Инновационные решения в области безопасности" />
-    <meta property="twitter:description" content="Консалтинговая компания в области безопасности труда, электробезопасности, охраны труда и промышленной безопасности." />
-    <meta property="twitter:image" content="%PUBLIC_URL%/logo/logoX.png" />
-    
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>ТЕХНОХАБ - Инновационные решения в области безопасности | Консалтинг и обучение</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="theme-color" content="#7B9906" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <meta name="description"
+    content="ТЕХНОХАБ - консалтинговая компания в области безопасности труда, электробезопасности, охраны труда, промышленной и пожарной безопасности. Более 10 решений, 100+ клиентов, 250+ программ обучения." />
+  <meta name="keywords"
+    content="техноХАБ, безопасность труда, электробезопасность, охрана труда, промышленная безопасность, пожарная безопасность, обучение, консалтинг, лицензирование, СРО" />
+  <meta name="author" content="ТЕХНОХАБ company" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://technohub.ru/" />
+  <meta property="og:title" content="ТЕХНОХАБ - Инновационные решения в области безопасности" />
+  <meta property="og:description"
+    content="Консалтинговая компания в области безопасности труда, электробезопасности, охраны труда и промышленной безопасности. Более 10 решений для вашего бизнеса." />
+  <meta property="og:image" content="%PUBLIC_URL%/logo/logoX.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://technohub.ru/" />
+  <meta property="twitter:title" content="ТЕХНОХАБ - Инновационные решения в области безопасности" />
+  <meta property="twitter:description"
+    content="Консалтинговая компания в области безопасности труда, электробезопасности, охраны труда и промышленной безопасности." />
+  <meta property="twitter:image" content="%PUBLIC_URL%/logo/logoX.png" />
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>ТЕХНОХАБ - Инновационные решения в области безопасности | Консалтинг и обучение</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      const minWidth = 1400;
+      const scale = Math.min(window.innerWidth / minWidth, 1);
+      const viewport = document.querySelector('meta[name="viewport"]');
+      viewport.setAttribute(
+        'content',
+        `width=device-width, initial-scale=${scale}, maximum-scale=${scale}, minimum-scale=${scale}, user-scalable=no`
+      );
+      window.addEventListener('resize', () => {
+        const newScale = Math.min(window.innerWidth / minWidth, 1);
+        viewport.setAttribute(
+          'content',
+          `width=device-width, initial-scale=${newScale}, maximum-scale=${newScale}, minimum-scale=${newScale}, user-scalable=no`
+        );
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
 </html>

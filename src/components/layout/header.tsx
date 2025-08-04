@@ -55,7 +55,12 @@ const Header = () => {
 
                 {/* Search/Menu Icon */}
                 <div className="flex flex-col items-end h-fit mt-14">
-                    <p className="font-bold text-[20px]">+7 (495) 085-55-35</p>
+                    <a href="tel:+74950855535" className="font-bold text-[20px]">
+                        +7 (495) 085-55-35
+                    </a>
+                    <a href="tel:+79299252524" className="font-bold text-[20px] mt-1">
+                        +7 (929) 925-25-24
+                    </a>
                     <DotHr />
                     <div className="flex space-x-4 mt-2 mr-2">
                         <a href="https://t.me/+79299252524" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
