@@ -19,12 +19,12 @@ const Contacts = () => {
                 />
                 <div className="flex flex-col gap-8">
                     <p className='text-3xl'><b>АДРЕС: </b> 115230, г. Москва, Нагатинская ул., д.2, помещ. 22/3</p>
-                    <p className='text-3xl'><b>ЭЛ. ПОЧТА: </b>info@technohub.ru</p>
+                    <p className='text-3xl'><b>ЭЛ. ПОЧТА: </b>info@technohub-company.ru</p>
                     <div className="flex gap-2">
                         <p className='text-3xl'><b>ТЕЛЕФОН: </b></p>
                         <div className="flex flex-col gap-2">
-                            <p className='text-3xl'>+7 (929) 925 25 24</p>
-                            <p className='text-3xl'>+7 (495) 085 55 35</p>
+                            <p className='text-3xl'>+7 (495) 085-55-35</p>
+                            <p className='text-3xl'>+7 (929) 925-25-24</p>
                         </div>
                     </div>
                 </div>
