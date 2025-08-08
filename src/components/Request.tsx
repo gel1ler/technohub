@@ -1,3 +1,4 @@
+import { send } from '@emailjs/browser';
 import React, { useState } from 'react'
 
 const Input: React.FC<{
@@ -96,21 +97,26 @@ const Request = () => {
         setIsSubmitting(true);
 
         try {
-            // Здесь можно добавить реальную отправку данных на сервер
-            // Например: await fetch('/api/contact', { method: 'POST', body: JSON.stringify(formData) })
+            const templateParams = {
+                from_name: `${formData.name} ${formData.lastname}`,
+                to_email: 'info@technohub-company.ru',
+                message: `Новая заявка:\nИмя: ${formData.name}\nФамилия: ${formData.lastname}`,
+                reply_to: 'noreply@yourwebsite.com', // можно указать email из формы
+            };
 
-            // Имитация отправки
-            await new Promise(resolve => setTimeout(resolve, 2000));
+            await send(
+                'service_8a5ymak',     // ← замените
+                'template_0nsn2fp',    // ← замените
+                templateParams,
+                'orI8OxXQKj9YCadsc'      // ← замените
+            );
 
             setIsSubmitted(true);
-            setFormData({
-                name: '',
-                lastname: '',
-            });
+            setFormData({ name: '', lastname: '' });
             setErrors({});
         } catch (error) {
-            console.error('Ошибка при отправке формы:', error);
-            setErrors({ name: 'Произошла ошибка при отправке. Попробуйте еще раз.' });
+            console.error('Ошибка EmailJS:', error);
+            setErrors({ name: 'Ошибка отправки. Попробуйте позже.' });
         } finally {
             setIsSubmitting(false);
         }
@@ -132,12 +138,11 @@ const Request = () => {
 
     if (isSubmitted) {
         return (
-            <div 
-                className={`my-40 w-[880px] rounded-[30px] flex flex-col items-center gap-4 py-14 mx-auto transition-all duration-700 ease-in-out ${
-                    showSuccess 
-                        ? 'bg-green-100 border-2 border-green-500 scale-100 opacity-100' 
+            <div
+                className={`my-40 w-[880px] rounded-[30px] flex flex-col items-center gap-4 py-14 mx-auto transition-all duration-700 ease-in-out ${showSuccess
+                        ? 'bg-green-100 border-2 border-green-500 scale-100 opacity-100'
                         : 'bg-gray-100 border-2 border-gray-300 scale-95 opacity-0'
-                }`}
+                    }`}
             >
                 <div className="text-center">
                     <div className={`transition-all duration-500 delay-200 ${showSuccess ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
@@ -157,9 +162,8 @@ const Request = () => {
     return (
         <form
             onSubmit={handleSubmit}
-            className={`my-40 w-[880px] rounded-[30px] flex flex-col items-center gap-4 py-14 mx-auto transition-all duration-500 ease-in-out ${
-                isSubmitting ? 'scale-95 opacity-50' : 'scale-100 opacity-100'
-            }`}
+            className={`my-40 w-[880px] rounded-[30px] flex flex-col items-center gap-4 py-14 mx-auto transition-all duration-500 ease-in-out ${isSubmitting ? 'scale-95 opacity-50' : 'scale-100 opacity-100'
+                }`}
             style={{
                 background: 'linear-gradient(180deg, #D9D9D9 0%, #C1C1C1 32.5%, #A4A4A4 70.5%, #868686 88.5%, #737373 100%)',
                 boxShadow: 'inset 4px - 4px 0.4px - 12px #000000',
@@ -188,11 +192,10 @@ const Request = () => {
             <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`text-xl font-semibold rounded-[30px] px-8 py-4 transition-all duration-500 ease-in-out transform ${
-                    isSubmitting
+                className={`text-xl font-semibold rounded-[30px] px-8 py-4 transition-all duration-500 ease-in-out transform ${isSubmitting
                         ? 'bg-gray-400'
                         : 'bg-thlightgreen hover:bg-thgreen '
-                }`}
+                    }`}
             >
                 <span className={`transition-all duration-300 ${isSubmitting ? 'opacity-70' : 'opacity-100'}`}>
                     {isSubmitting ? 'ОТПРАВКА...' : 'ОСТАВИТЬ ЗАЯВКУ'}
