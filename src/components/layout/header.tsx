@@ -1,5 +1,6 @@
 import React from 'react'
 import { DotHr } from '../UI/els'
+
 const Link = ({ children, href, bold }: { children: React.ReactNode, href: string, bold?: boolean }) => {
     const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();

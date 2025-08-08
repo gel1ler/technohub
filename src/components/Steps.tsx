@@ -24,9 +24,9 @@ const Step = ({ num, children }: { num: number, children?: React.ReactNode }) =>
             <p className='font-semibold text-3xl italic'>{`Шаг ${num}.`}</p>
             <DotHr gray />
         </div>
-        <p className='text-xl'>
+        <div className='text-xl'>
             {children}
-        </p>
+        </div>
     </div>
 );
 
